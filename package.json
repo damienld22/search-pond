@@ -1,0 +1,22 @@
+{
+  "name": "search-pond",
+  "version": "0.0.1",
+  "description": "Worker to search ponds, lake... on from maps",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --import=./register.js --env-file=.env --watch src/index.ts | pino-pretty",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "author": "Damien Le Dantec <damien-le-dantec@hotmail.fr>",
+  "license": "ISC",
+  "devDependencies": {
+    "pino-pretty": "^11.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "pino": "^9.3.2"
+  }
+}
